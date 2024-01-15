@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
               btn.addEventListener("click",function(){
                   let elId = this.getAttribute('id').substring(8)
                   if (elId) {
-                      window.location.assign(`http://127.0.0.1:5500/pages/detail.html?id=${elId}`)
+                      window.location.assign(`../pages/detail.html?id=${elId}`)
                   }
               })
           })

@@ -39,7 +39,6 @@ function createCard(data) {
 
 document.addEventListener("DOMContentLoaded", function () {
   let elId = window.location.href.substring(43);
-  console.log(elId);
   if (elId && elId.length == 36) {
     fetch(`https://auth-rg69.onrender.com/api/products/${elId}`)
       .then((res) => res.json())
@@ -47,11 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
         let card = createCard(data);
         bigCard.innerHTML = card;
         let back = document.querySelector("#back")
-console.log(back);
 back && back.addEventListener("click",function(){
   let confirmation = confirm("Bosh sahifaga qaytishni xoxlaysizmi ?")
   if (confirmation) {
-  window.location.assign("http://127.0.0.1:5500/index.html");
+  window.location.assign("../index.html");
   }})
   
 
@@ -59,6 +57,7 @@ back && back.addEventListener("click",function(){
 
 const sound = document.getElementById("sound");
 const triggers = document.querySelectorAll(".js-confetti");
+
 const defaults = {
   disableForReducedMotion: true
 };
@@ -125,7 +124,7 @@ Array.from(triggers).forEach((trigger) => {
         console.log(err);
       });
   } else {
-    window.location.assign("http://127.0.0.1:5500/index.html");
+    window.location.assign("../index.html");
   }
 });
 
