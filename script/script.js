@@ -1,19 +1,7 @@
+import { createCard } from "./function.js";
+
 const wrapper = document.getElementById("wrapper")
 
-function createCard(phone) {
-    return `
-
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">${phone.name}</h5>
-                <p class="card-text">${phone.description}</p>
-                <p class="card-text">${phone.price}</p>
-                <a href="#" class="btn btn-primary">Batafsil</a>
-            </div>
-        </div>
-
-    `
-}
 
 document.addEventListener('DOMContentLoaded', function() {
     fetch("https://auth-rg69.onrender.com/api/products/all", {
@@ -26,9 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 let card = createCard(phone);
                 wrapper.innerHTML += card;
             });
+          
+            
         }
+          let allButtons = document.querySelectorAll('button.in-detail')
+          allButtons.length && allButtons.forEach(btn => {
+              btn.addEventListener("click",function(){
+                  let elId = this.getAttribute('id').substring(8)
+                  if (elId) {
+                      window.location.assign(`http://127.0.0.1:5500/pages/detail.html?id=${elId}`)
+                  }
+              })
+          })
     })
     .catch(err => { 
+        wrapper.innerHTML = "Ma'lumotlar mavjud emas"
         console.log(err);
     })
 });
