@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 back && back.addEventListener("click",function(){
   let confirmation = confirm("Bosh sahifaga qaytishni xoxlaysizmi ?")
   if (confirmation) {
-  window.location.assign(`https://5-oy-9-dars-sooty.vercel.app/pages/detail.html?id=${elId}`);
+  window.location.assign(`https://5-oy-9-dars-sooty.vercel.app`);
   }})
   
 
