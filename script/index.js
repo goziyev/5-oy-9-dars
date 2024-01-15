@@ -123,8 +123,8 @@ Array.from(triggers).forEach((trigger) => {
       .catch((err) => {
         console.log(err);
       });
-  } else {
-    window.location.assign("../index.html");
-  }
+//   } else {
+//     window.location.assign("../index.html");
+//   }
 });
 
