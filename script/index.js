@@ -38,7 +38,7 @@ function createCard(data) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  let elId = window.location.href.substring(43);
+  let elId = window.location.href.substring(58);
   if (elId && elId.length == 36) {
     fetch(`https://auth-rg69.onrender.com/api/products/${elId}`)
       .then((res) => res.json())
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 back && back.addEventListener("click",function(){
   let confirmation = confirm("Bosh sahifaga qaytishni xoxlaysizmi ?")
   if (confirmation) {
-  window.location.assign("../index.html");
+  window.location.assign(`https://5-oy-9-dars-sooty.vercel.app/pages/detail.html?id=${elId}`);
   }})
   
 
@@ -123,8 +123,8 @@ Array.from(triggers).forEach((trigger) => {
       .catch((err) => {
         console.log(err);
       });
-//   } else {
-//     window.location.assign("../index.html");
-//   }
+  } else {
+    window.location.href("https://5-oy-9-dars-sooty.vercel.app");
+  }
 });
 
