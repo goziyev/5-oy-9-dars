@@ -7,8 +7,9 @@ function createCard(phone) {
     
     <p>narxi: ${phone.price}$</p>
     <p>izoh: ${phone.description.length ? phone.description : "Bu mahsulot bo'yicha qoshimcha malumotlar mavjud emas"}</p>
-    <button class="t" id="in-detail">Batafsil</button>
+    <button class="t in-detail" id="element_id${phone.id}">Batafsil</button>
 </div>
+
 
     `
 }

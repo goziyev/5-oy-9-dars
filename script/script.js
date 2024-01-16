@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
           
             
         }
-          let allButtons = document.querySelectorAll('button#in-detail')
+          let allButtons = document.querySelectorAll('button.in-detail')
           allButtons.length && allButtons.forEach(btn => {
               btn.addEventListener("click",function(){
                   let elId = this.getAttribute('id').substring(8)
