@@ -40,6 +40,7 @@
   }
   .child1{
      padding : 15px; 
+     transition: all 0.3s linear;
   }
   body{
     margin : 30px;
@@ -68,12 +69,9 @@
     font-size: 20px;
     font-weight : bold;
   }
-  .t:hover{
-    transform : scale(1.1);
-    cursor: pointer;
-  }
+  
   .child1:hover{
-     transform: scale(1.01);
+     transform: scale(1.05);
   }
   footer {
     margin : 20px;
