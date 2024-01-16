@@ -41,6 +41,16 @@
   color: white;
 }
 
+.child1 h3 {
+  height: 40px;
+  overflow: auto;
+}
+
+.child1 .desc {
+  height: 30px;
+  overflow: auto;
+}
+
 .child1 {
   padding: 15px;
 }

@@ -29,7 +29,14 @@
     // text-align: center ;
     background-color : black;
     color : white;
-   
+     h3{
+         height: 40px;
+         overflow:auto;
+     }
+     .desc{
+         height: 30px;
+         overflow: auto;
+     }
   }
   .child1{
      padding : 15px; 
