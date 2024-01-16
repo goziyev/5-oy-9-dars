@@ -21,6 +21,76 @@
   gap: 20px;
 }
 
+.parent1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 0.3px;
+  padding: 10px;
+}
+
+.child1 {
+  width: 300px;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
+  /* border-radius: 10px; */
+  background-color: black;
+  color: white;
+}
+
+.child1 {
+  padding: 15px;
+}
+
+body {
+  margin: 30px;
+  /* background-color : #966F33; */
+  background-image: url("https://freerangestock.com/sample/140799/wood-background--dark-wooden-background.jpg");
+  color: black;
+  background-attachment: fixed;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.t {
+  /* border : 1px solid green; */
+  background-color: green;
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.t:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.child1:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+footer {
+  margin: 20px;
+  background-color: #343A40;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+
 .containerA {
   background-color: #fff;
   position: relative;
