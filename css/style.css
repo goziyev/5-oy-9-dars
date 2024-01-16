@@ -137,6 +137,7 @@
   position: relative;
   display: block;
   padding: 2.2rem;
+  color: white;
   max-width: 350px;
   background: linear-gradient(14deg, rgba(2, 0, 36, 0.8) 0%, rgba(24, 24, 65, 0.7) 66%, #144c63 100%), radial-gradient(circle, rgba(2, 0, 36, 0.5) 0%, rgba(32, 15, 53, 0.2) 65%, rgba(14, 29, 28, 0.9) 100%);
   border: 2px solid #fff;
@@ -144,6 +145,38 @@
           box-shadow: 0px 0px 50px -15px #00d4ff;
   overflow: hidden;
   z-index: +1;
+}
+
+.animation-bg {
+  background: linear-gradient(-45deg, blue, green, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+  height: 100vh;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /*------input and submit section-------*/
